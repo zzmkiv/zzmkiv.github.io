@@ -1,0 +1,243 @@
+﻿---
+title: Hexo+GitHub Pages搭建博客
+date: 2018-02-18 22:00:20
+tags:
+   - Hexo
+   - Github
+---
+
+
+
+## 安装Node.js
+
+Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。
+
+在 Node.js 官网：<https://nodejs.org/en/>下载安装包
+
+保持默认设置即可，一路Next，安装很快就结束了。
+
+然后打开命令提示符，输入 node -v、npm -v，出现版本号则说明 Node.js 环境配置成功，第一步完成！！！
+
+![此处输入图片的描述][1]
+
+
+
+ 
+
+
+## 安装Git
+  
+为什么要搭建 Git 环境？ - 因为需要把本地的网页和文章等提交到 GitHub 上。
+Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。
+
+在 Git 官网：<https://git-scm.com/>下载安装包 
+![此处输入图片的描述][2]
+
+
+桌面右键，打开 Git Bush Here，输入 git --version，出现版本号则说明 Git 环境配置成功，第二步完成！！！
+  
+![此处输入图片的描述][3]
+
+
+## GitHub注册
+   
+GitHub 是一个代码托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。
+
+Github注册：<https://github.com/>
+
+创建仓库：Repository name 使用自己的用户名，仓库名规则：
+
+注意：`yourname` 必须是你的用户名。
+
+`yourname/yourname.github.io`
+
+访问 yourname.github.io，如果可以正常访问，那么 Github 的配置已经结束了。
+
+到此搭建 Hexo 博客的相关环境已经搭建完成
+
+## 安装Hexo
+ 
+Hexo 是一个快速、简洁且高效的博客框架，使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
+
+强烈建议你花20分钟区读一读 Hexo 的官方文档：<https://hexo.io/zh-cn/>
+
+![此处输入图片的描述][6]
+
+
+使用 npm 安装 Hexo：在命令行中输入
+
+`npm install hexo-cli -g`
+
+查看Hexo的版本
+
+`hexo version`
+
+![此处输入图片的描述][8]
+
+安装 Hexo 完成后，请执行下列命令来初始化 Hexo
+
+ > hexo init yobbbsky.github.io
+ cd yobbsky.github.io
+  npm install
+
+## 运行本地服务 
+  
+ 1. hexo server
+ 2. 或者
+ 3. hexo s
+
+您的网站会在 http://localhost:4000 下启动。如果 http://localhost:4000 能够正常访问，则说明 Hexo 本地博客已经搭建起来了，然后，我们要部署到Github。
+ 
+注意1：执行hexo server提示找不到该指令
+
+解决办法：在Hexo 3.0 后server被单独出来了，需要安装server，安装的命令如下：
+
+> sudo npm install hexo-server
+  或者
+  npm install hexo -server --save
+
+## 关联 Hexo 与 GitHub Pages
+
+我们如何让本地git项目与远程的github建立联系呢？用 SSH keys
+
+生成SSH keys
+输入你自己的邮箱地址
+
+`ssh-keygen -t rsa -C "1064732243@qq.com"`
+
+在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入，我们按回车不设置密码。
+
+添加 SSH Key 到 GitHub
+
+打开自己C盘user文件夹，里面内容有刚才生成的密钥，准确的复制这个文件的内容，粘贴到 https://github.com/settings/ssh 的 new SSH key 中
+
+测试
+
+可以输入下面的命令，看看设置是否成功，git@github.com的部分不要修改
+
+`ssh -T git@github.com`
+
+如果是下面的反馈：
+> The authenticity of host ‘github.com (207.97.227.239)’ can’t be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)?
+
+配置Git个人信息
+
+现在你已经可以通过 SSH 链接到 GitHub 了，还有一些个人信息需要完善的。
+Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的。
+
+> git config --global user.name "yobbsky"
+ git config --global user.email "1064732243@qq.com"
+
+配置 Deployment
+
+在_config.yml文件中，找到Deployment，然后按照如下修改，用户名改成你的：
+
+需要注意的是：冒号后面记得空一格！
+
+> deploy:
+    type: git
+    repo: git@github.com:yobbsky/yobbsky.github.io.git
+    branch: master
+    
+
+本地文件提交到 GitHub Pages
+
+// 删除旧的 public 文件
+hexo clean
+// 生成新的 public 文件
+hexo generate
+或者
+hexo g
+// 开始部署
+hexo deploye
+或者
+hexo d
+
+在浏览器中输入 https://yobbsky.github.io （用户名改成你的）看到了 Hexo 与 GitHub Pages 已经成功关联了
+
+注意1：若上面操作失败，则需要提前安装一个扩展：
+
+`npm install hexo-deployer-git --save`
+
+注意2：如果在执行 hexo d 后,出现 error deployer not found:github 的错误（如下），则是因为没有设置好 public key 所致，重新详细设置即可。
+
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+
+注意3：怎么避免 .md 文件被解析？
+
+Hexo原理就是hexo在执行hexo generate时会在本地先把博客生成的一套静态站点放到public文件夹中，在执行hexo deploy时将其复制到.deploy文件夹中。Github的版本库通常建议同时附上README.md说明文件，但是hexo默认情况下会把所有md文件解析成html文件，所以即使你在线生成了 README. md，它也会在你下一次部署时被删去。怎么解决呢？
+
+在执行hexo deploy前把在本地写好的README.md文件复制到.deploy文件夹中，再去执行hexo deploy。
+
+## GitHub Pages 地址解析到个人域名
+
+Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服 务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默认提供的域名 github.io 或者自定义域名来发布站点。
+
+在 GitHub 仓库的根目录下建立一个 CNAME 的文本文件(注意：没有扩展名)，文件里面只能输入一个你的域名，不能加http://
+
+`www.zzmkiv.com`
+
+注意：CNAME 一定是在你 Github 项目的 master 根目录下
+
+进入阿里云域名解析地址，添加解析：
+
+记录类型选择CNAME
+主机记录填www
+解析线路选择默认
+记录值填yourname.github.io
+TTL值为10分钟
+再添加一个解析，记录类型A
+主机记录填www
+解析线路选择默认
+记录值填你GitHub 的ip地址（在命令行中ping：）
+
+`ping yobbsky.github.com`
+ 
+注意：CNAME文件在下次 hexo deploy的时候就消失了，需要重新创建，这样就很繁琐
+
+方法一：每次 hexo d 之后，就去 GitHub 仓库根目录新建 CNAME文件
+
+方法二：在 hexo g 之后， hexo d 之前，把CNAME文件复制到 “\public\” 目录下面，里面写入你要绑定的域名。
+
+方法三（推荐）：将需要上传至github的内容放在source文件夹，例如CNAME、favicon.ico、images等，这样在 hexo d 之后就不会被删除了。
+
+方法四：通过安装插件实现永久保留
+
+`$ npm install hexo-generator-cname --save`
+
+之后在_config.yml中添加一条
+
+>  plugins:
+  - hexo-generator-cname
+
+需要注意的是：如果是在github上建立的CNAME文件，需要先clone到本地，然后安装插件，在deploy上去即可。CNAME只允许一个域名地址。
+
+注意1：每次生成的 CNAME 都是 yoursite.com 怎么解决？
+
+修改 _config.yml
+
+
+> url: http://www.zzmkiv.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+
+## Home
+
+[Theme-indigo-Home](https://github.com/yscoder/hexo-theme-indigo/wiki)
+
+
+ 
+
+
+  [1]: http://ovvd7k5mv.bkt.clouddn.com/18-2-11/25869107.jpg
+  [2]: http://ovvd7k5mv.bkt.clouddn.com/18-2-20/84957094.jpg
+  [3]: http://ovvd7k5mv.bkt.clouddn.com/18-2-11/63394162.jpg
+  [6]: http://ovvd7k5mv.bkt.clouddn.com/18-2-20/2123189.jpg
+  
