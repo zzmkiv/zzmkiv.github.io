@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.yklove.top/"/>
-  <updated>2019-03-28T09:53:56.233Z</updated>
+  <updated>2019-03-28T12:16:14.000Z</updated>
   <id>http://www.yklove.top/</id>
   
   <author>
@@ -17,16 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2019-3-28</title>
-    <link href="http://www.yklove.top/2019/03/28/2019-3-28/"/>
-    <id>http://www.yklove.top/2019/03/28/2019-3-28/</id>
+    <title>着迷</title>
+    <link href="http://www.yklove.top/2019/03/28/%E7%9D%80%E8%BF%B7/"/>
+    <id>http://www.yklove.top/2019/03/28/着迷/</id>
     <published>2019-03-28T09:53:56.000Z</published>
-    <updated>2019-03-28T09:53:56.233Z</updated>
+    <updated>2019-03-28T12:16:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><b style="color:red;font-size:32px">着迷  -胜屿</b></p><blockquote><p> 温柔的语气 会勾人心魄的眼睛<br>闯进心里 有种魔力<br>慢慢的靠近 这让人窒息的唇印<br>吻在心底 失去防御<br>心脏一瞬间被电流穿击<br>就算为你放弃世界 也不可惜<br>因为此刻我的眼睛里只有你<br>你的微笑让我如此的着迷<br>你的双眼让我放弃抵抗力<br>所有的剧情全部都指向你<br>只想要爱你<br>是你让我变得如此的着迷<br>是你让时间变得格外拥挤<br>好像全世界都是你控制的领地<br>束手就擒<br>你像一个迷 让我产生偏爱兴趣<br>忘记呼吸 被你吸引<br>像在沙漠中 遇见了一大片森林<br>那种心情 无法抗拒<br>心脏一瞬间被电流穿击<br>就算为你放弃世界 也不可惜<br>因为此刻我的眼睛里只有你<br>你的微笑让我如此的着迷<br>你的双眼让我放弃抵抗力<br>所有的剧情全部都指向你<br>想要爱你<br>是你让我变得如此的着迷<br>是你让时间变得格外拥挤<br>好像全世界都是你控制的领地<br>束手就擒<br>你的微笑让我如此的着迷<br>的双眼让我放弃抵抗力<br>所有的剧情全部都指向你<br>只想要爱你<br>是你让我变得如此的着迷<br>是你让时间变得格外拥挤<br>好像全世界都是你控制的领地<br>束手就擒</p></blockquote>]]></content>
     
     <summary type="html">
     
+      
+      
+        &lt;p&gt;&lt;b style=&quot;color:red;font-size:32px&quot;&gt;着迷  -胜屿&lt;/b&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt; 温柔的语气 会勾人心魄的眼睛&lt;br&gt;闯进心里 有种魔力&lt;br&gt;慢慢的靠近 这让人窒息的唇印&lt;br&gt;吻在心底 失去防御&lt;br&gt;心脏一瞬间被
+      
+    
     </summary>
     
+    
+      <category term="song" scheme="http://www.yklove.top/tags/song/"/>
     
   </entry>
   
@@ -250,33 +261,6 @@
   </entry>
   
   <entry>
-    <title>Markdown语法简介</title>
-    <link href="http://www.yklove.top/2018/02/18/Markdown%E8%AF%AD%E6%B3%95/"/>
-    <id>http://www.yklove.top/2018/02/18/Markdown语法/</id>
-    <published>2018-02-18T14:00:20.000Z</published>
-    <updated>2018-02-26T14:56:02.164Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>代码：</p><pre><code># h1## h2### h3</code></pre><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>单行引用<br>代码：</p><pre><code>&gt; hello md</code></pre><p>演示：</p><blockquote><p>hello md</p></blockquote><p>多行引用<br>代码：</p><pre><code>&gt; hello md&gt; hello md&gt; hello md</code></pre><p>演示：</p><blockquote><p>hello md<br>hello md<br>hello md</p></blockquote><h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>代码：</p><pre><code>`hello md`</code></pre><p>演示</p><blockquote><p><code>hello md</code></p></blockquote><p>多行代码块<br>代码：</p><blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hello md</span><br><span class="line">hello md</span><br><span class="line">hello md</span><br></pre></td></tr></table></figure></blockquote><p>演示：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hello md</span><br><span class="line">hello md</span><br><span class="line">hello md</span><br></pre></td></tr></table></figure><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>无序：//+，*，-</p><ul><li>1</li><li>2</li><li>3</li></ul><p>有序：//1,2,3</p><ol><li>one</li><li>two</li><li>three</li></ol><h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><blockquote><p> <em>hello</em>                 // *<br><strong>hello</strong>                   // **<br><del>hello</del>                    // ~~</p></blockquote><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|col1|col2|col3|col4|</span><br><span class="line">|:---:|:---:|:---:|:---:|</span><br><span class="line">|aaa|bbb|ccc|ddd|</span><br><span class="line">|111|222|333|444|</span><br></pre></td></tr></table></figure><p>演示：</p><table><thead><tr><th style="text-align:center">col1</th><th style="text-align:center">col2</th><th style="text-align:center">col3</th><th style="text-align:center">col4</th></tr></thead><tbody><tr><td style="text-align:center">aaa</td><td style="text-align:center">bbb</td><td style="text-align:center">ccc</td><td style="text-align:center">ddd</td></tr><tr><td style="text-align:center">111</td><td style="text-align:center">222</td><td style="text-align:center">333</td><td style="text-align:center">444</td></tr></tbody></table><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>代码：</p><pre><code>![](http://ovvd7k5mv.bkt.clouddn.com/18-2-7/20259758.jpg)</code></pre><p>演示：</p><p><img src="http://ovvd7k5mv.bkt.clouddn.com/18-2-7/20259758.jpg" alt="此处输入图片的描述"></p><h2 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h2><p>代码：</p><pre><code>[百度1](http://www.baidu.com/)</code></pre><p>邮箱链接：</p><pre><code>&lt;xxx@outlook.com&gt;</code></pre><h2 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h2><p>Markdown 语法是不支持直接插入视频的<br>普遍的做法是 插入HTML的 iframe 框架，通过网站自带的分享功能获取</p><p>代码：</p><pre><code>&lt;iframe height=498 width=510 src=&apos;http://player.youku.com/embed/XMjk4NzA1OTMzNg==&apos; frameborder=0 &apos;allowfullscreen&apos;&gt;&lt;/iframe&gt;</code></pre><p>演示：</p><iframe height="498" width="510" src="http://player.youku.com/embed/XMjk4NzA1OTMzNg==" frameborder="0" 'allowfullscreen'></iframe><h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p>MD编辑器：<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">作业部落</a><br>图床：<a href="https://jiantuku.com" target="_blank" rel="noopener">七牛云+chrome插件+极简图床</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h2&gt;&lt;p&gt;代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# h1
-## h2
-### h3
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;引用&quot;&gt;&lt;a href=
-      
-    
-    </summary>
-    
-    
-      <category term="Markdown" scheme="http://www.yklove.top/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
     <title>多PC同步博客</title>
     <link href="http://www.yklove.top/2018/02/18/%E5%A4%9APC%E5%90%8C%E6%AD%A5%E5%8D%9A%E5%AE%A2/"/>
     <id>http://www.yklove.top/2018/02/18/多PC同步博客/</id>
@@ -323,6 +307,33 @@
       <category term="Hexo" scheme="http://www.yklove.top/tags/Hexo/"/>
     
       <category term="Github" scheme="http://www.yklove.top/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法简介</title>
+    <link href="http://www.yklove.top/2018/02/18/Markdown%E8%AF%AD%E6%B3%95/"/>
+    <id>http://www.yklove.top/2018/02/18/Markdown语法/</id>
+    <published>2018-02-18T14:00:20.000Z</published>
+    <updated>2018-02-26T14:56:02.164Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>代码：</p><pre><code># h1## h2### h3</code></pre><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>单行引用<br>代码：</p><pre><code>&gt; hello md</code></pre><p>演示：</p><blockquote><p>hello md</p></blockquote><p>多行引用<br>代码：</p><pre><code>&gt; hello md&gt; hello md&gt; hello md</code></pre><p>演示：</p><blockquote><p>hello md<br>hello md<br>hello md</p></blockquote><h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>代码：</p><pre><code>`hello md`</code></pre><p>演示</p><blockquote><p><code>hello md</code></p></blockquote><p>多行代码块<br>代码：</p><blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hello md</span><br><span class="line">hello md</span><br><span class="line">hello md</span><br></pre></td></tr></table></figure></blockquote><p>演示：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hello md</span><br><span class="line">hello md</span><br><span class="line">hello md</span><br></pre></td></tr></table></figure><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>无序：//+，*，-</p><ul><li>1</li><li>2</li><li>3</li></ul><p>有序：//1,2,3</p><ol><li>one</li><li>two</li><li>three</li></ol><h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><blockquote><p> <em>hello</em>                 // *<br><strong>hello</strong>                   // **<br><del>hello</del>                    // ~~</p></blockquote><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">|col1|col2|col3|col4|</span><br><span class="line">|:---:|:---:|:---:|:---:|</span><br><span class="line">|aaa|bbb|ccc|ddd|</span><br><span class="line">|111|222|333|444|</span><br></pre></td></tr></table></figure><p>演示：</p><table><thead><tr><th style="text-align:center">col1</th><th style="text-align:center">col2</th><th style="text-align:center">col3</th><th style="text-align:center">col4</th></tr></thead><tbody><tr><td style="text-align:center">aaa</td><td style="text-align:center">bbb</td><td style="text-align:center">ccc</td><td style="text-align:center">ddd</td></tr><tr><td style="text-align:center">111</td><td style="text-align:center">222</td><td style="text-align:center">333</td><td style="text-align:center">444</td></tr></tbody></table><h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>代码：</p><pre><code>![](http://ovvd7k5mv.bkt.clouddn.com/18-2-7/20259758.jpg)</code></pre><p>演示：</p><p><img src="http://ovvd7k5mv.bkt.clouddn.com/18-2-7/20259758.jpg" alt="此处输入图片的描述"></p><h2 id="插入链接"><a href="#插入链接" class="headerlink" title="插入链接"></a>插入链接</h2><p>代码：</p><pre><code>[百度1](http://www.baidu.com/)</code></pre><p>邮箱链接：</p><pre><code>&lt;xxx@outlook.com&gt;</code></pre><h2 id="插入视频"><a href="#插入视频" class="headerlink" title="插入视频"></a>插入视频</h2><p>Markdown 语法是不支持直接插入视频的<br>普遍的做法是 插入HTML的 iframe 框架，通过网站自带的分享功能获取</p><p>代码：</p><pre><code>&lt;iframe height=498 width=510 src=&apos;http://player.youku.com/embed/XMjk4NzA1OTMzNg==&apos; frameborder=0 &apos;allowfullscreen&apos;&gt;&lt;/iframe&gt;</code></pre><p>演示：</p><iframe height="498" width="510" src="http://player.youku.com/embed/XMjk4NzA1OTMzNg==" frameborder="0" 'allowfullscreen'></iframe><h2 id="推荐"><a href="#推荐" class="headerlink" title="推荐"></a>推荐</h2><p>MD编辑器：<a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="noopener">作业部落</a><br>图床：<a href="https://jiantuku.com" target="_blank" rel="noopener">七牛云+chrome插件+极简图床</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h2&gt;&lt;p&gt;代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# h1
+## h2
+### h3
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;引用&quot;&gt;&lt;a href=
+      
+    
+    </summary>
+    
+    
+      <category term="Markdown" scheme="http://www.yklove.top/tags/Markdown/"/>
     
   </entry>
   
