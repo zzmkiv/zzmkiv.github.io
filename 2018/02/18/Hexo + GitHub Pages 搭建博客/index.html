@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Hexo+GitHub Pages搭建博客 | Yukai&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Hexo,Github">
+    <meta name="description" content="安装Node.jsNode.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。 在 Node.js 官网：https://nodejs.org/en/下载安装包 保持默认设置即可，一路Next，安装很快就结束了。 然后打开命令提示符，输入 node -v、npm -v，出现版本号则说明 Node.js 环境配置成功，第一步完成">
+<meta name="keywords" content="Hexo,Github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+GitHub Pages搭建博客">
+<meta property="og:url" content="http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/index.html">
+<meta property="og:site_name" content="Yukai&#39;s Blog">
+<meta property="og:description" content="安装Node.jsNode.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。 在 Node.js 官网：https://nodejs.org/en/下载安装包 保持默认设置即可，一路Next，安装很快就结束了。 然后打开命令提示符，输入 node -v、npm -v，出现版本号则说明 Node.js 环境配置成功，第一步完成">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://ovvd7k5mv.bkt.clouddn.com/18-2-11/25869107.jpg">
+<meta property="og:image" content="http://ovvd7k5mv.bkt.clouddn.com/18-2-20/84957094.jpg">
+<meta property="og:image" content="http://ovvd7k5mv.bkt.clouddn.com/18-2-11/63394162.jpg">
+<meta property="og:image" content="http://ovvd7k5mv.bkt.clouddn.com/18-2-20/2123189.jpg">
+<meta property="og:updated_time" content="2018-02-20T11:55:28.555Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo+GitHub Pages搭建博客">
+<meta name="twitter:description" content="安装Node.jsNode.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。 在 Node.js 官网：https://nodejs.org/en/下载安装包 保持默认设置即可，一路Next，安装很快就结束了。 然后打开命令提示符，输入 node -v、npm -v，出现版本号则说明 Node.js 环境配置成功，第一步完成">
+<meta name="twitter:image" content="http://ovvd7k5mv.bkt.clouddn.com/18-2-11/25869107.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="Yukai&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" style="width:300px" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand" style="background:#464646">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/usb.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">喻凯</h5>
+          <a href="mailto:1064732243@qq.com" title="1064732243@qq.com" class="mail">1064732243@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/photo">
+                <i class="icon icon-lg icon-photo"></i>
+                相册
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/movies">
+                <i class="icon icon-lg icon-film"></i>
+                电影
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/timeline">
+                <i class="icon icon-lg icon-check"></i>
+                时间轴
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/resumeK">
+                <i class="icon icon-lg icon-id-card"></i>
+                关于
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/zzmkiv" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="300" height="270" src="//music.163.com/outchain/player?type=0&id=2011724124&auto=0&height=430"></iframe>
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header" style="background:#464646">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Hexo+GitHub Pages搭建博客</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header" style="background:#464646">
+
+    <div class="container fade-scale">
+        <h1 class="title">Hexo+GitHub Pages搭建博客</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-02-18T14:00:20.000Z" itemprop="datePublished" class="page-time">
+  2018-02-18
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装Node-js"><span class="post-toc-number">1.</span> <span class="post-toc-text">安装Node.js</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装Git"><span class="post-toc-number">2.</span> <span class="post-toc-text">安装Git</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#GitHub注册"><span class="post-toc-number">3.</span> <span class="post-toc-text">GitHub注册</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装Hexo"><span class="post-toc-number">4.</span> <span class="post-toc-text">安装Hexo</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#运行本地服务"><span class="post-toc-number">5.</span> <span class="post-toc-text">运行本地服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#关联-Hexo-与-GitHub-Pages"><span class="post-toc-number">6.</span> <span class="post-toc-text">关联 Hexo 与 GitHub Pages</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#GitHub-Pages-地址解析到个人域名"><span class="post-toc-number">7.</span> <span class="post-toc-text">GitHub Pages 地址解析到个人域名</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Home"><span class="post-toc-number">8.</span> <span class="post-toc-text">Home</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Hexo + GitHub Pages 搭建博客" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Hexo+GitHub Pages搭建博客</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-02-18 22:00:20" datetime="2018-02-18T14:00:20.000Z" itemprop="datePublished">2018-02-18</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境，可以在非浏览器环境下，解释运行 JS 代码。</p>
+<p>在 Node.js 官网：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a>下载安装包</p>
+<p>保持默认设置即可，一路Next，安装很快就结束了。</p>
+<p>然后打开命令提示符，输入 node -v、npm -v，出现版本号则说明 Node.js 环境配置成功，第一步完成！！！</p>
+<p><img src="http://ovvd7k5mv.bkt.clouddn.com/18-2-11/25869107.jpg" alt="此处输入图片的描述"></p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>为什么要搭建 Git 环境？ - 因为需要把本地的网页和文章等提交到 GitHub 上。<br>Git 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。</p>
+<p>在 Git 官网：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a>下载安装包<br><img src="http://ovvd7k5mv.bkt.clouddn.com/18-2-20/84957094.jpg" alt="此处输入图片的描述"></p>
+<p>桌面右键，打开 Git Bush Here，输入 git –version，出现版本号则说明 Git 环境配置成功，第二步完成！！！</p>
+<p><img src="http://ovvd7k5mv.bkt.clouddn.com/18-2-11/63394162.jpg" alt="此处输入图片的描述"></p>
+<h2 id="GitHub注册"><a href="#GitHub注册" class="headerlink" title="GitHub注册"></a>GitHub注册</h2><p>GitHub 是一个代码托管平台，因为只支持 Git 作为唯一的版本库格式进行托管，故名 GitHub。</p>
+<p>Github注册：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+<p>创建仓库：Repository name 使用自己的用户名，仓库名规则：</p>
+<p>注意：<code>yourname</code> 必须是你的用户名。</p>
+<p><code>yourname/yourname.github.io</code></p>
+<p>访问 yourname.github.io，如果可以正常访问，那么 Github 的配置已经结束了。</p>
+<p>到此搭建 Hexo 博客的相关环境已经搭建完成</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo 是一个快速、简洁且高效的博客框架，使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<p>强烈建议你花20分钟区读一读 Hexo 的官方文档：<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></p>
+<p><img src="http://ovvd7k5mv.bkt.clouddn.com/18-2-20/2123189.jpg" alt="此处输入图片的描述"></p>
+<p>使用 npm 安装 Hexo：在命令行中输入</p>
+<p><code>npm install hexo-cli -g</code></p>
+<p>查看Hexo的版本</p>
+<p><code>hexo version</code></p>
+<p>![此处输入图片的描述][8]</p>
+<p>安装 Hexo 完成后，请执行下列命令来初始化 Hexo</p>
+<blockquote>
+<p>hexo init yobbbsky.github.io<br> cd yobbsky.github.io<br>  npm install</p>
+</blockquote>
+<h2 id="运行本地服务"><a href="#运行本地服务" class="headerlink" title="运行本地服务"></a>运行本地服务</h2><ol>
+<li>hexo server</li>
+<li>或者</li>
+<li>hexo s</li>
+</ol>
+<p>您的网站会在 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 下启动。如果 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 能够正常访问，则说明 Hexo 本地博客已经搭建起来了，然后，我们要部署到Github。</p>
+<p>注意1：执行hexo server提示找不到该指令</p>
+<p>解决办法：在Hexo 3.0 后server被单独出来了，需要安装server，安装的命令如下：</p>
+<blockquote>
+<p>sudo npm install hexo-server<br>  或者<br>  npm install hexo -server –save</p>
+</blockquote>
+<h2 id="关联-Hexo-与-GitHub-Pages"><a href="#关联-Hexo-与-GitHub-Pages" class="headerlink" title="关联 Hexo 与 GitHub Pages"></a>关联 Hexo 与 GitHub Pages</h2><p>我们如何让本地git项目与远程的github建立联系呢？用 SSH keys</p>
+<p>生成SSH keys<br>输入你自己的邮箱地址</p>
+<p><code>ssh-keygen -t rsa -C &quot;1064732243@qq.com&quot;</code></p>
+<p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入，我们按回车不设置密码。</p>
+<p>添加 SSH Key 到 GitHub</p>
+<p>打开自己C盘user文件夹，里面内容有刚才生成的密钥，准确的复制这个文件的内容，粘贴到 <a href="https://github.com/settings/ssh" target="_blank" rel="noopener">https://github.com/settings/ssh</a> 的 new SSH key 中</p>
+<p>测试</p>
+<p>可以输入下面的命令，看看设置是否成功，<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>的部分不要修改</p>
+<p><code>ssh -T git@github.com</code></p>
+<p>如果是下面的反馈：</p>
+<blockquote>
+<p>The authenticity of host ‘github.com (207.97.227.239)’ can’t be established.<br>RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.<br>Are you sure you want to continue connecting (yes/no)?</p>
+</blockquote>
+<p>配置Git个人信息</p>
+<p>现在你已经可以通过 SSH 链接到 GitHub 了，还有一些个人信息需要完善的。<br>Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的。</p>
+<blockquote>
+<p>git config –global user.name “yobbsky”<br> git config –global user.email “<a href="mailto:1064732243@qq.com" target="_blank" rel="noopener">1064732243@qq.com</a>“</p>
+</blockquote>
+<p>配置 Deployment</p>
+<p>在_config.yml文件中，找到Deployment，然后按照如下修改，用户名改成你的：</p>
+<p>需要注意的是：冒号后面记得空一格！</p>
+<blockquote>
+<p>deploy:<br>    type: git<br>    repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yobbsky/yobbsky.github.io.git<br>    branch: master</p>
+</blockquote>
+<p>本地文件提交到 GitHub Pages</p>
+<p>// 删除旧的 public 文件<br>hexo clean<br>// 生成新的 public 文件<br>hexo generate<br>或者<br>hexo g<br>// 开始部署<br>hexo deploye<br>或者<br>hexo d</p>
+<p>在浏览器中输入 <a href="https://yobbsky.github.io" target="_blank" rel="noopener">https://yobbsky.github.io</a> （用户名改成你的）看到了 Hexo 与 GitHub Pages 已经成功关联了</p>
+<p>注意1：若上面操作失败，则需要提前安装一个扩展：</p>
+<p><code>npm install hexo-deployer-git --save</code></p>
+<p>注意2：如果在执行 hexo d 后,出现 error deployer not found:github 的错误（如下），则是因为没有设置好 public key 所致，重新详细设置即可。</p>
+<p>Permission denied (publickey).<br>fatal: Could not read from remote repository.<br>Please make sure you have the correct access rights<br>and the repository exists.</p>
+<p>注意3：怎么避免 .md 文件被解析？</p>
+<p>Hexo原理就是hexo在执行hexo generate时会在本地先把博客生成的一套静态站点放到public文件夹中，在执行hexo deploy时将其复制到.deploy文件夹中。Github的版本库通常建议同时附上README.md说明文件，但是hexo默认情况下会把所有md文件解析成html文件，所以即使你在线生成了 README. md，它也会在你下一次部署时被删去。怎么解决呢？</p>
+<p>在执行hexo deploy前把在本地写好的README.md文件复制到.deploy文件夹中，再去执行hexo deploy。</p>
+<h2 id="GitHub-Pages-地址解析到个人域名"><a href="#GitHub-Pages-地址解析到个人域名" class="headerlink" title="GitHub Pages 地址解析到个人域名"></a>GitHub Pages 地址解析到个人域名</h2><p>Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服 务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默认提供的域名 github.io 或者自定义域名来发布站点。</p>
+<p>在 GitHub 仓库的根目录下建立一个 CNAME 的文本文件(注意：没有扩展名)，文件里面只能输入一个你的域名，不能加http://</p>
+<p><code>www.zzmkiv.com</code></p>
+<p>注意：CNAME 一定是在你 Github 项目的 master 根目录下</p>
+<p>进入阿里云域名解析地址，添加解析：</p>
+<p>记录类型选择CNAME<br>主机记录填www<br>解析线路选择默认<br>记录值填yourname.github.io<br>TTL值为10分钟<br>再添加一个解析，记录类型A<br>主机记录填www<br>解析线路选择默认<br>记录值填你GitHub 的ip地址（在命令行中ping：）</p>
+<p><code>ping yobbsky.github.com</code></p>
+<p>注意：CNAME文件在下次 hexo deploy的时候就消失了，需要重新创建，这样就很繁琐</p>
+<p>方法一：每次 hexo d 之后，就去 GitHub 仓库根目录新建 CNAME文件</p>
+<p>方法二：在 hexo g 之后， hexo d 之前，把CNAME文件复制到 “\public\” 目录下面，里面写入你要绑定的域名。</p>
+<p>方法三（推荐）：将需要上传至github的内容放在source文件夹，例如CNAME、favicon.ico、images等，这样在 hexo d 之后就不会被删除了。</p>
+<p>方法四：通过安装插件实现永久保留</p>
+<p><code>$ npm install hexo-generator-cname --save</code></p>
+<p>之后在_config.yml中添加一条</p>
+<blockquote>
+<p> plugins:</p>
+<ul>
+<li>hexo-generator-cname</li>
+</ul>
+</blockquote>
+<p>需要注意的是：如果是在github上建立的CNAME文件，需要先clone到本地，然后安装插件，在deploy上去即可。CNAME只允许一个域名地址。</p>
+<p>注意1：每次生成的 CNAME 都是 yoursite.com 怎么解决？</p>
+<p>修改 _config.yml</p>
+<blockquote>
+<p>url: <a href="http://www.zzmkiv.com" target="_blank" rel="noopener">http://www.zzmkiv.com</a><br>root: /<br>permalink: :year/:month/:day/:title/<br>permalink_defaults:</p>
+</blockquote>
+<h2 id="Home"><a href="#Home" class="headerlink" title="Home"></a>Home</h2><p><a href="https://github.com/yscoder/hexo-theme-indigo/wiki" target="_blank" rel="noopener">Theme-indigo-Home</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-02-20T11:55:28.555Z" itemprop="dateUpdated">2018-02-20 19:55:28</time>
+</span><br>
+
+
+        
+        原文链接：<a href="/2018/02/18/Hexo + GitHub Pages 搭建博客/" target="_blank" rel="external">http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://www.yklove.top">
+            <img src="/img/usb.jpg" alt="喻凯">
+            喻凯
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/&title=《Hexo+GitHub Pages搭建博客》 — Yukai's Blog&pic=http://www.yklove.top/img/usb.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/&title=《Hexo+GitHub Pages搭建博客》 — Yukai's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo+GitHub Pages搭建博客》 — Yukai's Blog&url=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/&via=http://www.yklove.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/02/18/多PC同步博客/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">多PC同步博客</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNTE3Ny8xMTcxMg==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢老板~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/weixin.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/img/weixin.jpg" data-alipay="/img/zhifu.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top" style="background:#464646">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"></a></span>
+            
+            <!--<span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>-->
+            <span>
+            <a target="_blank" href="mailto:1064732243@qq.com" style="border-bottom:none">
+            <img src="data:image/png;base64,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" title="E-mail 联系" style="width:20px;height:20px;border:none;">
+            </a>
+            </span>
+
+            <span>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1064732243&amp;site=qq&amp;menu=yes" style="border-bottom:none">
+            <img src="data:image/png;base64,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" title="QQ 联系" style="width:22px;height:22px;border:none;"></a>
+            </span>
+
+            <span>
+            <a target="_blank" href="https://github.com/zzmkiv" style="border-bottom:none">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAZGElEQVR4Xu2deZQcVb3Hv7/qySQEQlgDyWHXIAEiGqOQAJKQ7qoeEM9BBAWNh4cou7gAPk1m6vaETXkqIItP9KDIIov4MEK6qmaYHAi7QYkQZAcjECIQD1uSmXT93qkJgRCdTK23bnXf/mf+6N/6ufc7Xeu9BP3RBDSBIQmQZqMJaAJDE9AC0bNDE9gEAS0QPT00gaIKxHRqNjNPAWHs+z3w0wR62Df44c1W05L5R4h39AgXm4DpzNsd8PcFMIXBnwKw+fqOCFjiG8bVPZWuP+fRpbK/IOUesYfRwDMhoCwD88M+GY4B/3euVVsRwkeb5EigXBdlg3A4gIPBmATC6E2Xw8G4fj6PkpUViOmIuQDmxYBynW/Qb3oqthPDV7tkRKDi2hMA46vk89dB2ClqmlIDYxccJt6I6pfUXmWBPA5gr7gNMvAig64c0eCf5gE2bt3N5mc64jMMnEGAmaQ3ZvqKV7V/kyRGHF8lBVL25k0y/MbSOA1t7MPA2wRcBbT92LXmLksjpo4xPAHTEScA+AaA/Ya3DmXxf64ljgxlmaKRkgKp1O1ziOgHKfa5PtQtjRLs3rJIRXwZ1FfokEfMF6NXj+DTQfQdAsal2Uzwj86zxBZpxgwTS0mBmI64B8D0MA3EsmFcP8Cl7r6Ozidi+WunDxAwnYs2B94+g8FnEWjbrPD4BlVln1sqJ5ADF/1gzOZvr5JzMsZ8W4PR1dtRW5LVoDZz3GCsRr+16iwCTgdhm6x7ZcaPvar4TtZ5NoyvnECCkzoA86VBYDQYuPitLbfsvG/6t1dJy1vwRBXXPox8/AJE4yW2sti1xFSJ+aCiQC4CcJZMCEEuZrzgAyf3VkU9y9zVBWK3tW28I9bSBMPAjgBtz8yjibAZwKOYaRQIowCMIgz+bQNjDQirmTkQ8GoirA7+Mmg1AW8wYTkTvVxq0PK1baXlveU5r2TVw4w7xE4jSnwpgaSfMAc99bdjzMKZ4q2s+ts4rnoCqQsPhLIsABvnYfDvCSPOjHvFy3Tscb5Pe8OgScT+R4hobwbvBNB4AraS1hfzywC9zMQvgPEoA38jg5Z6pvhL3BoqdfF9EOYSAjHn82n4xvTejq77ZGVXTiAVR7xIwARZAIbKw4w5XlWcv6k6rHr3fg3i6Qb8jzPTJAL2AWHrvGsfLj+DnwNTcCXvMSJ+CMBdm3oCYdaC7mmG0fg1gSYOFzvr732mE3qq9tVZ51kfXymBzOgTW7X3Y6Ws5ofLw8CjBONE1+p6YEaf2KJtDQ4wiA4E+EAGphEg/bLjcDXH/Z7BTwH0AAH3NXxetP7CRcUVFxLju3Hjpu/HF7lW7Zz04/7niEoJpOLaU4kp+I+m1IeBvxIwWamisi6G8QYDK4mwa9aposRnxq1eVRwVxSeJrVICMR378wDdnKQh7dvcBJj5z161NkVWl0oJpFKvnUnEF8tqXucpHgEGVniW2EFW5YoJxO4mok5Zzes8BSTA8N2qKMmqXCmBmI64FMAZsprXeYpJ4M0xW46WdVNXMYHYPwfoa8UcNl21LAL97dh64UzxLxn5FBOI+CWA4DFp/dEEhiTwzuiR2yw6+HtSbgcoJZBKXVxFhBP13NAENkVA5tuFqgnkMiKcpqeHJrApAq9tO7598dSTBmRQUkogpmP/EKCzZTSucxSXgGsJafNWWqIww5Hhm4Rh0mubYhBY5lpiF1mlKiaQ2mwivkZW8zpP8Qgw+AHPqh0gq3K1BOJ2H0jsL5LVvM5TSALXuZb4sqzKlRLIQXdfsPXod9a8Lqt5naeIBOj7rmVfIKtypQQSNG3W7Zckv8Ypi7XOkwIBJj7cM2t3pBAqVAjlBFJxxB8IOCJU9dqo5QjIvEkYwFVPINmtidVyk6nZGmbGUq8q9pHZl3oCccXHiJHLSt4ywetc0Qkw40deVUhd0EM5gQTYKo5YKXWBg+hjpT1yIMBEZc+0e2WmVlMgdftiIjpTJgidS3ECjOVuVchcg2sQiJoCcbsPIfYXKj5kujyJBBi437PENIkp1RTIrJ7ztzXW9i9WbbEA2QOj8/07AWZ0e1Vhy2Sj1C/IjD4xqn0N7gFB2kv5MmHrXMkJMNFxnmnfkDxSuAhKCaTi2LfmtaRlOFzaShECs1xL3CmjFmUEUnZqpxjgK2Q0rXMUm0CwsklbAxNl7BymhEBM59ydGWsfpw12Ny32EOrqsybAwLWeJWZnnUcRgWS8YU7WFHX8XAjIeC4rd4GU6/bpBtFPcyGskxaaAINfeWfz0RPvOei7b2bVSK4CKXsXjjUaq5aBaExWDeq4TU/gYtcS38qqy1wFYjp6HaysBrZl4jIaa0eUPnLnrM5nsug5N4GUve7J5DceIVBuNWQBVMfMhYDnWiLRPuxDVZ3b5DRz3kkql2HUSbMkkMm9kVwEYtW792HyH82Slo7dWgQYcD1LWGl3nYtAKnVxIxGOSbsZHa+1CfiG8dGeStdf06QgXSCH9p67a9vA2mdBMNJsRMfSBLK4eShdIJW6+B8iSN0MXk+d1iHQ347tF84Ur6bVsXyBOOIVAsal1YCOowlsSICZT/GqtZ+lRUWqQCr6Rai0xk3HGYIAMxZ6VTEzLUByBVIXVxLh5LSK13E0gY0JMJj9Uvv43vKcV9KgI1UgZl2sAGH7NArXMTSBoQgw0emeaV+eBiFpAgnunBu+vySNonUMTWAYAre4ljg6DUrSBGI64lQAqag6jcZ1jOYlwODXPKu2XRodShNIxRE3EPDFNIrWMTSB4QgQ80SnWnt6OLvhvpcmELMuXgZhx+EK0t9rAmkQYMJ/eab4VdJYUgRiOvY4gFK5qpC0Ye3fGgSY+RKvWvtm0m4lCURMB3BP0mK1vyYQlgAD8z1LfDas/VB2UgRSrttfMYh+nbRY7a8JhCWQ1krwUgRSqdvdRNQZtjltpwkkJcDAKs8So5PGkSIQsy6uA+G4pMVqf00gCgHiEROc6pyXo/hsbCtLIAtAqCYpVPtqAlEJpPF+iBSBVByxkIBDojao7TWBhAQOdC1xb5IYcgRSFw8S4ZNJCtW+mkBUAg1GR29V1KP6bWgvRyCO+CsB+yYpVPtqAlEJMNExnmnfHNUvB4HYTxJoYpJCta8mEJWAz3RCT9W+OqqfdIGYdfEoCFJ3J00CRfs2CwE63rXsRPff5Bxi6XOQZplxBeuDj3at2i1JipYjEH0VK8kYad+YBNJY/V2KQExH3AGgI2af2k0TiEXA9zGzp0Mk2gxWikAqdfE7InwuVpfaSROISaBRMj7VW+56KKb7oJscgTjiNwR8OUmh2lcTiEqA2NjXqXY9FtVP/lUsR/wvgK8nKVT7agLRCZT2cK3O56L7ve8h5RfEdMRPACR+eSVJo9q3FQnwDq5VW5Gkc0kCqdkAiySFal9NICoB1xKJ53fiAGGKrrjieGIkuqMZJo+20QTeI8BY7lbF+KREpAjEqtdmMrGUjd+TAtH+zUGAgfs9S0xL2o0UgZjOvN2BxrNJi9X+mkBYAgz81rPEsWHth7KTIpCjb7qp9K+xjw3o/QiTDpf2j0DgQtcS34tg/x9NpQgkyGw64u8Adk5asPbXBMIQYKKTPdMObi8k+kgTSKUu7ibCQYmq1c6aQEgCvkHVnorthDQf0kyeQPTd9KRjpf0jEBjwS3v1dXQ+EcEl30OsSt0+h4h+kLRg7a8JDEeAgdWeaY8GEQ9nO9z30n5Byp44yPBx93AF6e81gRQI9LmWODSFOHIeVgwKndEn2kb08zsEGpFG4TqGJjAUAWae51VrXWkQkvYLEhRr1sW9ICS+eZNG4zpG8xJI6wQ9ICRVIHoL6OadlMp0xvD7R2LswpnirTRqkisQt3YkMd+aRuE6hibwHwkwlrhVsV9adKQKRO8Tktaw6ThDn3/gcq8qTk+LkFSBBEVXHHEfAQek1YCOowlsSICJLc+suWlRkS8Q1/42Mf0orQZ0HE3gPQKMla6F7UDCT4uKdIHM6jlvh1JjYHlaDeg4msAGBH7uWuKkNIlIF0hQvL7cm+YQ6ljrCTBR2TPt3jSJ5CKQcl180yAE76nrjyaQDoHg8Koqtkkn2PtRchGIPsxKexh1PICvdK3aqWmTyEUgg4dZjpgP4DNpN6TjtSaBRgn79JbF0rS7z1Eg3Z8A/D+l3ZCO13oEmHG7VxWZ/LPNTSDrTtbtu0B0cOsNqe44TQIN35je29F1X5ox18fKVyBOrQPgYGFr/dEE4hK4y7VEZvtf5iqQgEhFb88Wd2JoPwBp7EO4KZC5C6S8QHzOMPA7PdqaQGQCjAfdqtg/sl8Eh9wF8u4VreDZmUqEurVpixNgYC0bpY/2VDofzxKFEgKpuPYEMD1BwBZZNqtjNxWBc11LdGbdkRICGTwXcWunEfNlWTes4zcBAcbTr203fu/FU08ayLobZQSy7oTdvp9AmR5TZg1Ux8+WAIPZL5X2T7pzVNgqlRKIVbc/zKDFIGwZtgFt13IEznMtMVdW10oJ5N0T9kPB8EAwZEHQeYpBgJkdr1qryqxWOYEMHmrpReZkzoFC5GLGk0SbT3Gts9+WWbCSAln3S2L/FqAvyIShcylKgLHSYEypd4jnZVeorEDePWlfRKADZUPR+ZQjcIhribvyqEppgczoE6NG9OM2Asw84OicORNgvA4yTNfqWpxXJUoLJICybvOdpdcS8MW8IOm8ORBg/MNvwyE9ZZHrzmTKC2T90FTq4qdESG29oxyGXKcMS4DxRKNtxCG95TmvhHXJyq4wAll34i5OAPMVIBqZFRAdN3cCC/rbcUxaS4cm7aZQAgmaPbQuprQBt4GwU9Lmtb9CBBgNEHW6ln2BQlXJXbw6rcatutjGJ9xMQCp7QKRVl44Tk8DgyTiOzOtK1aaqLtwvyIbNDC4fBNT0oykxJ6YCbgxcC+LvembtJQXK+bcSCi2QoJt3f01sAKcS0KYiZF3TvxNg4E8E4+Q8L+GGGZfCC2R9k7N67D1LjcE1fzNZ3SIMTG0zPAEGnmUfZ/d0iEJsg9E0Alk/NGWvezL5ficxjtIPPA4/YaVZMB4D0QWuyTekubh01vUnEkh1gdhtLbCbYQT7n1PJB1YYwPNM/iN5H1MOPjpPFLxx9pWsIer4myDAeNgHnd9TtQu57kAsgZhO9/6A/2MA04dCw8DfwfgDkfGrPI8zZ/SJHdv68WViPo6IPq4nc/YEGPwaAdcApRtdq+uB7DNmlyGWQCqOeJGACRHKesRnurynal8VwSd10+A8xWjQ8QC+QMAeqSdo5YDMb4LoDwBd51r2gmZBEVcgz8SZYAx+ymDjJKdq9+UN0HTEvsx0OME/XK/uGHM0GE+D8EcA811L3BkzitJusQRi1WszmTg2ECbq8kx7nipkDrr7gq03W9Vfhs+fBvEsAk1SpTal6mAsZ+AuIlrkG0ZP1kvuqNB7LIEEhVfc2rHEfH2CJhYAfLxr1VYkiJGJa3BvpQGaSQZ/knzei0ETibB3JslUDcp4HoSnADzFjD/7bXxXb7n2pKrlZlVXbIG8K5KjifmmBMUtA0qHuFbncwliSHMdvGpH+DCIJhrwJzLowwRMBLCXtCJSTMTASwQ8EYjAB54C0+MoGc+2wi9DWIyJBLJOJPMmkt/4NQjTwibd0I6BF9koVYo6KDP6xFbta9ALwpQ4/efpw0THeKZ9c541qJ47sUDWNxgs/AbmLgLGRW6asdJvw9S8X46JWveMPrHFiH7cS8DkqL6q2DPxbM+sXatKParVkZpAgsY67jh/+0apP7jE94nIjTKWjBzAtPlHiHci++bkUKmLPxLh8JzSp5Z2LeMTd1bFw6kFbKJAqQok4BL8V23vxw1xnoli4GbPEscUgW+lXjuTiC8uQq3D1ciMF0YNYO8i/XMarqe0vk9dIO8dcjn2rQQ6MmqhPvOXeqq1JFfHoqaMbF/uEXsYDTwT2VFhB2ae51VrXQqXmEtpmQkk6CbW2laMN0Bt+7rW3GW5EAmR1HREcGL7+RCmhTFhYPVAAxMXHib+UZiiJRSaqUAGRVIXwTKi5Ui9SNgYJVI9GxjP6un+ZKnhPxjXX2U/Bv/Ss2onqlyj7NoyF0jZu3Cs0Vj9FxB2i9YcX+RatXOi+WRvXXHETQQcnX0m+RmCTWkIbXuo/Ostm0rmAll3qBVvy2cm4yDP7LpHNpSh8s24Q+zUXoKyh35pcGLGz7yqOCWNWM0QQ4pAAlCVuqgRIdpJIOP5/pGYrMoSMKZTswEWzTDwQ/bAWOlWxTZN3WOE5qQJZFAkjv0kgYJHM8J/GHW3KjrCO2RnaTri7wB2zi6DGpGJ6VAVnrhWgYZUgZjx90W/wrXEaXkCG1yPi5DbGrEye2fGZV5VnCEzp6q5pApk3aGWXSciKyoQn/GtnqrI7cZc2RFnGcBFUesupD3jCbcqCvkAZtq8pQuk7M2bZPiNpfEaoXNcy85lklYccTsBh8Wru4hevIOKryLIJildIO+ei/yMQCfFazafy79m3X4JROPj1Vw8L/2k77oxy0UgZU/sYvh4Ie60YcatRHyKrP9wwQtUTHgtbr1F9GPG+V5VzCli7WnWnItAggZMx/45QF+L3czgIyn4nmuJK2LHCOEY3Oikxqrv0LolhFrowze6Vq3l92TJTSDJzkXen6frNnfEJW+O2fLq+6Z/e1VaM9h0akcw+8cS0bFpxSxSHGY85FXFp4pUcxa15iaQdb8iwg0ubKXSGON1Bq4nwg2uJe6NGjPY7q29f/CtwKMZOC7Wi19Rkypsz4xXvarYXuESpZSWq0Aqbu1IYk59jdbg/QYiLALwKBMv4Qa99xIWlbAl+7yVQcZYgMcy8BEAHyNgXynEC5TEtUSu80MFVLkDqNTF80TYVQUYuoYPEuhvxxhVHvPJa2xyF4jp1L4EsH4nOq8ZsIm8xCMmONU5LytYmrSSchdI0GnFse8n0P7SutaJQhEY8Et79XV0BssCtexHCYEc2jvvQ20DjSUgjG7ZkVCw8YbP+/V21JYoWJq0kpQQSNBtuV47yiC+RVrnOlEYApNdSzwaxrBZbZQRSADYdOwfAnR2s8IuYF9aIKoNWqUuriHCbNXqatF6tEBUHPiKY/+CQF9VsbZWqqlRwj69ZRHzyevmIKXUIdaGSMtObY4BPrc5MBezC98o7V3UNZPTIq6sQAYv/7q1WeQHmz6i5R95SGvAo8TRvyA5Pe4eZZCs+nnjfQxc1Qxr4EbpWxHbSa4l/qZILbmUofQvyAcOuer2MQboEhB2zIVUaybVAinSuHfccenItW0rjwfzOXH2SCxSr4rUqgWiyEBELsN0xKeZMRvERxJo28gBwjoEL2YBa1rxPIiptKdndgbbsLXspzCHWJsaoWDHWp9pGoGnE/BRgCeCaEyUUQ0WbwbwNBjPEmEpwI+sbWt76M5Znc+06mVnLZACnKRHmeQb2s7oE9uVGsbutJbHAf5YkDHWCN7/YGIGVhjE//QNfrXUwKtrRtKrC2eKfw2VK/HrwXGbyNmPmCc61drTOZeRa/qm+AXJmqAWSNaE1Y2vBRJibCqOnWCZohAJlDUp7VGUHYizQqgFEoJspS6uJMLJIUybysQv4UNF21g17QHQAglB1HTsKwBquS0BDB+71zvE8yEQNa2JFkiIoTUdcTmAU0OYNpXJ2ra23e6cNTf2An/NAEMLJMQoVuriMiLkurp8iDJTN/EN7NpTGdzyoWU/WiAhht50xKUAWm47gP4Gdm71TT21QEIIpFK3LyaiM0OYNpVJfzvGL5wpljdVUxGb0QIJAUwLJASkJjXRAgkxsKYjfgLgmyFMm8qk1Ggft+Cw7/+zqZqK2IwWSAhgpiOCNxtbcCsAvYmOFkgIgVTc2mnEfFkI06YxYTB7Vs1omoZiNqIFEgJcVotsh0idp8ky1xK75FmACrm1QEKMgul07w/494cwbRoTBu73LDGtaRqK2YgWSAhwwd4hI/rxOgGbhTBvChNmvsSr1lruwsTGg6cFEnI6m459C0BHhTQvvJlv4OCeigj2WGnpjxZIyOE3HfuLAN0Q0rzYZozlblW0zI6+mxosLZCQU3lGn2hrX4PnQNgppEthzXzQ3B7LPq+wDaRYuBZIBJiVem02EV8TwaVwpsHryG2NbXZZcNg31hSu+AwK1gKJCLXiiCUETI7oViBzOtG17F8WqOBMS9UCiYjXdMReYDwAwpYRXZU3Z/DvPav2OeULlVigFkgM2INrcoF7CDQihruaLoyHX9tu/AGLp540oGaB+VSlBRKTezlYCpXoxpjuarkxlvSPxKyFM8WrahWWfzVaIAnGoOLaU8F0OwHjEoTJ1ZUZtw6MxJcWzhTBwnn6sxEBLZCEU2Ld6vP9txPRxxOGkuoePIzIMDr15dxNY9cCSWFaBvdI2tbQbAL/NxH2TCFkdiEYDSbc7Jcwr9V3jwoDWQskDKUINuV67XCD+LMMPirTRbUj1BSYMvAnAm7zS7i+1de6ioJOCyQKrYi2sxZ0TzPI34eI9wRjTybaKmKIWOYE+Mx4gYieBPhxJn7QM2svxQrW4k5aIC0+AXT7+hxEzwFNIDYB/QsSG512bAUCWiCtMMq6x9gE/h+M9o4yKoegWQAAAABJRU5ErkJggg==" alt="GitHub microzz" title="GitHub 联系" style="width:19px;height:19px;border:none;"></a>
+                </span>
+        </p>
+        <p></p>
+    </div>
+    <!-- <div class="bottom">
+        <p><span>喻凯 &copy; 2015 - 2019</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>            
+    </div> -->      
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/&title=《Hexo+GitHub Pages搭建博客》 — Yukai's Blog&pic=http://www.yklove.top/img/usb.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/&title=《Hexo+GitHub Pages搭建博客》 — Yukai's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo+GitHub Pages搭建博客》 — Yukai's Blog&url=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/&via=http://www.yklove.top" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.yklove.top/2018/02/18/Hexo + GitHub Pages 搭建博客/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACv0lEQVR42u3a0U7jUAwEUP7/p4u0r5B2xs5tWenkCRVK7wlSbMb++oqvx7/r59fJzz9/5ed19YnJ5w4vPDw8vNHRkw/LP+b57Xj+256/np8ZDw8P7zQvOWLOPveT+Znx8PDw/gIvb6A3R09KCB4eHt7/xctjgpx91+3Gw8PDeyevDVVnUez+XQezFjw8PLyYtxmAferrN8338PDw8Mqpej6matcC8hu3ufDw8PBO8GZRaT4eu2t41laBVRKMh4eHl2anRRfajqyer09tbmU9rsPDw8O7ibd5NN+2GhWXnHxhCw8PD+8EL3/zLJLYx8RJMbgsEnh4eHgHeO3jO2+U82KzeVcRQODh4eHdxMuLQRI97G/KJq795Qx4eHh4h3lJrJCP+dtVgDwESb6Lh4eH91neZvA/WyNoi8GRrAUPDw8v6GM3mNmjP9plKBmXtwkPDw/vJt6jvNr4dRMWJ+tcLz4dDw8P7wAvH963kWtSkWYRcIvHw8PDu5eXN8F5mJtP7ffx7os/Ax4eHt4BXvvPf8JIis2etxmh4eHh4e15+chqdrhZ4z4bnkX5NB4eHt6C1w7j87a7JeXBbjEqw8PDwzvMO9enz4KGdjx2mbXg4eHhHeC1D+59pFvkInGoUR8RDw8Pb8Rrh/35qCkvFTmpHaHh4eHhneC1I/m7xmNtRJu313h4eHif4rXxRN3gLtYRopnerDrh4eHhBbx2tN8+sttFhM3Ri20yPDw8vAXvUV7tY3oWE+cLXi/+DHh4eHgHeLOWNy8Ss9WEWfs+bLLx8PDwRrykGLQrU3etpSZnWDXWeHh4eAte29q2Q/120LVZycLDw8P7O7z8EHnxyBcCkhAk2ibDw8PDeztvdqDN2kHbyq8KAx4eHl7MmzXH+WO6Hae1BebyFTw8PLwDvNkALCfly1LtDRpO8/Dw8PDmvG8SwkEF1roc5AAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
